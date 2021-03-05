@@ -230,3 +230,7 @@ section>*:last-child {
 #hidden-bio {
   font-weight: 300;
 }
+
+#donate pre {
+  font-size: 0.850em;
+}
