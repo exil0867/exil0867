@@ -59,8 +59,15 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: 'Inconsolata', monospace;
-  font-size: 1rem;
+  font-size: 1.070rem;
   line-height: 1.65;
+}
+
+@media screen and (max-width:767.98px) {
+  body {
+    padding: 60px 15px;
+    font-size: 1rem;
+  }
 }
 
 ul {
