@@ -223,9 +223,10 @@ section>*:last-child {
   margin-bottom: 0;
 }
 
-#title {
+#title>a {
   text-transform: uppercase;
   color: #07d404;
+  text-decoration: none;
 }
 
 #avatar {
