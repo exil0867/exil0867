@@ -237,8 +237,16 @@ section>*:last-child {
   cursor: pointer;
 }
 
+#intro.toggle {
+  margin-bottom: 0.1rem;
+}
+
 #hidden-bio {
   font-weight: 300;
+}
+
+#bio {
+  padding: 0 38px;
 }
 
 #donate pre {
