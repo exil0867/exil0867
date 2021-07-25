@@ -72,6 +72,10 @@ body {
   }
 }
 
+pre {
+  font-size: 0.850em;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -247,8 +251,4 @@ section>*:last-child {
 
 #bio {
   padding: 0 38px;
-}
-
-#donate pre {
-  font-size: 0.850em;
 }
