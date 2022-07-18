@@ -23,7 +23,7 @@ const AboutMe = () => {
           }}
           target="_blank"
           title="The source code of this page"
-          href="https://github.com/exilvm/exilvm"
+          href="https://github.com/exilvm/exilvm/tree/site"
           rel="noreferrer"
         >
           3x!1
