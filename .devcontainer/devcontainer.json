@@ -7,7 +7,7 @@
 	"runArgs": ["--dns=1.1.1.1"],
 	"settings": {},
 	"extensions": [
-		"dbaeumer.vscode-eslint", "jpoissonnier.vscode-styled-components", "dsznajder.es7-react-js-snippets"
+		"dbaeumer.vscode-eslint", "jpoissonnier.vscode-styled-components", "dsznajder.es7-react-js-snippets", "rvest.vs-code-prettier-eslint"
 	],
 	"postCreateCommand": "sudo apt update && sudo apt -y upgrade",
 	"remoteUser": "node",
