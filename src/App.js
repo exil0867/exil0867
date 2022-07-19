@@ -158,13 +158,23 @@ const Donate = () => {
 const Resources = () => {
   const list = [
     {
+      children: "InstallGentoo Wiki",
+      href: "https://wiki.installgentoo.com/wiki/Main_Page",
+      target: "_blank",
+    },
+    {
       children: "/g/",
       href: "https://boards.4channel.org/g/#catalog",
       target: "_blank",
     },
     {
-      children: "InstallGentoo Wiki",
-      href: "https://wiki.installgentoo.com/wiki/Main_Page",
+      children: "LAINCHAN",
+      href: "https://lainchan.org",
+      target: "_blank",
+    },
+    {
+      children: "PrivacyGuides",
+      href: "https://www.privacyguides.org",
       target: "_blank",
     },
     {
