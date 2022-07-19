@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@fontsource/inconsolata": "^4.5.6",
-    "@mdx-js/loader": "^2.1.2",
     "gravatar-url": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
