@@ -1,19 +1,26 @@
 {
-	"name": "exilvm",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": { "VARIANT": "16-bullseye" }
-	},
-	"runArgs": ["--dns=1.1.1.1"],
-	"settings": {},
-	"extensions": [
-		"dbaeumer.vscode-eslint", "jpoissonnier.vscode-styled-components", "dsznajder.es7-react-js-snippets", "rvest.vs-code-prettier-eslint"
-	],
-	"postCreateCommand": "sudo apt update && sudo apt -y upgrade",
-	"remoteUser": "node",
-	"features": {
-		"git": "latest",
-		"github-cli": "latest",
-		"sshd": "latest"
-	}
+  "name": "exilvm",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "16-bullseye"
+    }
+  },
+  "runArgs": [
+    "--dns=1.1.1.1"
+  ],
+  "settings": {},
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "jpoissonnier.vscode-styled-components",
+    "dsznajder.es7-react-js-snippets",
+    "rvest.vs-code-prettier-eslint"
+  ],
+  "postCreateCommand": "sudo apt update && sudo apt -y upgrade",
+  "remoteUser": "node",
+  "features": {
+    "git": "latest",
+    "github-cli": "latest",
+    "sshd": "latest"
+  }
 }
