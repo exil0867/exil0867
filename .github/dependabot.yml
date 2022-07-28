@@ -3,8 +3,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: "yarn"
+  - package-ecosystem: "npm"
     directory: "/"
-    tarfet-branch: "site"
+    target-branch: "site"
     schedule:
       interval: "weekly"
