@@ -4,7 +4,6 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
-    target-branch: "site"
+    directory: "/site"
     schedule:
       interval: "weekly"
