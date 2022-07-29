@@ -1,5 +1,9 @@
 name: Deploy to neocities
 
+defaults:
+  run:
+    working-directory: site
+
 # only run on changes to master
 on:
   push:
@@ -30,4 +34,4 @@ jobs:
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true
-        dist_dir: site/build
+        dist_dir: build
