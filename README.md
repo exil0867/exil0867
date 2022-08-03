@@ -2,14 +2,14 @@
 <!--START_SECTION:waka-->
 ```text
 ━ Programming Languages: 
-TypeScript               6 hrs 20 mins       █████████████░░░░░░░░░░░░   53.43% 
-JSON                     1 hr 40 mins        ███░░░░░░░░░░░░░░░░░░░░░░   14.1% 
-Markdown                 56 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   7.99% 
-Other                    49 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   6.88% 
-YAML                     48 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   6.81%
+TypeScript               10 hrs 21 mins      ████████████░░░░░░░░░░░░░   49.69% 
+SCSS                     3 hrs 53 mins       ████░░░░░░░░░░░░░░░░░░░░░   18.64% 
+JSON                     2 hrs 28 mins       ███░░░░░░░░░░░░░░░░░░░░░░   11.84% 
+YAML                     1 hr 21 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   6.51% 
+Other                    1 hr 4 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   5.18%
 
 ━ Operating System: 
-Linux                    11 hrs 52 mins      █████████████████████████   100.0%
+Linux                    20 hrs 50 mins      █████████████████████████   100.0%
 ```
 
 <!--END_SECTION:waka-->
