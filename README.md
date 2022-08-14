@@ -2,14 +2,14 @@
 <!--START_SECTION:waka-->
 ```text
 ━ Programming Languages: 
-TypeScript               13 hrs 34 mins      ████████████░░░░░░░░░░░░░   47.73% 
-JSON                     5 hrs 27 mins       ████░░░░░░░░░░░░░░░░░░░░░   19.2% 
-Python                   2 hrs 44 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   9.66% 
-Docker                   2 hrs 27 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   8.63% 
-YAML                     1 hr 35 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   5.62%
+TypeScript               11 hrs 9 mins       █████████░░░░░░░░░░░░░░░░   36.05% 
+JSON                     7 hrs 7 mins        █████░░░░░░░░░░░░░░░░░░░░   23.01% 
+Docker                   5 hrs 16 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.06% 
+Python                   3 hrs 7 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   10.1% 
+Other                    1 hr 16 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   4.12%
 
 ━ Operating System: 
-Linux                    26 hrs 51 mins      █████████████████████████   100.0%
+Linux                    29 hrs 22 mins      █████████████████████████   100.0%
 ```
 
 <!--END_SECTION:waka-->
