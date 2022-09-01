@@ -74,11 +74,11 @@ const Socials = () => {
       href: "https://github.com/exilvm",
       target: "_blank",
     },
-    {
-      children: "Tumblr",
-      href: "https://exilvm.tumblr.com",
-      target: "_blank",
-    },
+    // {
+    //   children: "Tumblr",
+    //   href: "https://exilvm.tumblr.com",
+    //   target: "_blank",
+    // },
     {
       children: "Steam",
       href: "https://steamcommunity.com/id/exilvm",
