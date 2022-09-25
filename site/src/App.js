@@ -123,7 +123,6 @@ const Contact = () => {
 
 const Donate = () => {
   const list = [
-    { name: "PGP key", address: <a target="_blank" rel="noreferrer" href="https://github.com/exilvm/exilvm/blob/master/key.pgp">96120B10AD05294F</a> },
     { name: "BTC", address: "17nFjdytthofdha6aSmBDSHnb9NcSAhd8Z" },
     {
       name: "BTC (Bech32)",
@@ -138,6 +137,7 @@ const Donate = () => {
       address:
         "46SXLx7PGvm4u7FnDvNvoPYu48AP4fUfbHwCDw6koxbhUrT1bSYvuHe7et7q8uSJ52NJApxXUyLmX7AaJP7ysXcLRyeZaaz",
     },
+    { name: "PGP key", address: <a target="_blank" rel="noreferrer" href="https://github.com/exilvm/exilvm/blob/master/key.pgp">96120B10AD05294F</a> }
   ];
   return (
     <section>
