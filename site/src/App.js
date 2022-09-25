@@ -121,7 +121,7 @@ const Contact = () => {
   );
 };
 
-const Donate = () => {
+const Crypto = () => {
   const list = [
     { name: "BTC", address: "17nFjdytthofdha6aSmBDSHnb9NcSAhd8Z" },
     {
@@ -215,7 +215,7 @@ const App = () => {
         <AboutMe />
         <Socials />
         <Contact />
-        <Donate />
+        <Crypto />
         <Resources />
       </div>
     </>
