@@ -7,7 +7,8 @@
     }
   },
   "runArgs": [
-    "--dns=1.1.1.1"
+    "--dns=1.1.1.1",
+    "-v", "${env:HOME}/.wakatime.cfg:/root/.wakatime.cfg"
   ],
   "settings": {},
   "extensions": [
