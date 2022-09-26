@@ -16,7 +16,7 @@
     "dsznajder.es7-react-js-snippets",
     "rvest.vs-code-prettier-eslint"
   ],
-  "postCreateCommand": "sudo apt update && sudo apt -y upgrade",
+  "postCreateCommand": "bash .devcontainer/post-run.sh",
   "remoteUser": "node",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {
