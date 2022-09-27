@@ -208,7 +208,7 @@ const App = () => {
           <meta name="description" content="exilvm - Personal page" />
           <link rel="icon" href={profileAvatar} />
           <link rel="apple-touch-icon" href={profileAvatar} />
-          <title>{`>Exil's Hideout`}</title>
+          <title>{`./exilvmlinuz`}</title>
         </Helmet>
       </HelmetProvider>
       <div style={{ width: "390px" }}>
