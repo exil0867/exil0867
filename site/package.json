@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@fontsource/inconsolata": "^4.5.7",
+    "@fontsource/inconsolata": "^4.5.8",
     "gravatar-url": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

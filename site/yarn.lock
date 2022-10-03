@@ -1188,10 +1188,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/inconsolata@^4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/inconsolata/-/inconsolata-4.5.7.tgz#7c9044f8b7754497ee7493bb6e38781e1fd5c239"
-  integrity sha512-yKas++IyswpH+ngiSRnjehQuDvmyrSi6MdVOWsjijoj3pO0ZQfqpvl35lo8CG3fuoVH23CMmVmDG9JqFjI/q0A==
+"@fontsource/inconsolata@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/inconsolata/-/inconsolata-4.5.8.tgz#a596ecdb1e354655c6e5e9502547891d8e63184d"
+  integrity sha512-CxQOFuq4+uhE8UHPTtYtcFrAbFpjDLbjGxsgvvCCf2m1HOjt9mUL6ZDZWgIZHOVRUBMq4ufxYDHDQZoyMbNyRw==
 
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
