@@ -1,5 +1,7 @@
-##### Randomized skillset
-<pre><pre>
+<pre>
+<img src="https://lain.in.net/assets/site-image-udbv0nd8.png" width="350" align="left">
+<b>  Randomized skillset</b>
+<pre>
 React.js, Angular, TypeScript, Linux, Node.js, DevOps, Next.js
 JavaScript, Zod, Docker, Web Development, Front-End Development,
 Git, Secure Shell (SSH), Remote Development, Continuous Integration
