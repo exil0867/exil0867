@@ -1,5 +1,5 @@
 <pre>
-<img src="https://lain.in.net/assets/site-image-udbv0nd8.png" width="350" align="left">
+<img src="https://lain.in.net/assets/site-image-udbv0nd8.png" width="250" align="left">
 <b>  Randomized skillset</b>
 <pre>
 React.js, Angular, TypeScript, Linux, Node.js, DevOps, Next.js
