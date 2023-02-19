@@ -8,7 +8,7 @@
 <div>
 <pre align="left">
 <b>Randomized skillset:</b>
-React.js, Angular, Next.js TypeScript, Linux, Node.js, Svelte
+React.js, Angular, Next.js, TypeScript, Linux, Node.js, Svelte
 JavaScript, Zod, Docker, ESLint, NPM/PNPM, Remote Development
 Front-End Development, DevOps, Git, SSH, Shell/Bash Scripting
 Continuous Integration/Continuous Delivery, UX/UI Design, Jest
