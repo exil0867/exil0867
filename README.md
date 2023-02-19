@@ -1,6 +1,8 @@
 <pre>
-<img src="https://lain.in.net/assets/site-image-udbv0nd8.png" width="250" align="left">
-<b>  Randomized skillset</b>
+<a href="https://www.pixiv.net/en/artworks/81755755" target="_blank">
+<img src="https://cdn.donmai.us/sample/7e/8c/__charlotte_and_momoe_nagisa_mahou_shoujo_madoka_magica_and_1_more_drawn_by_toukashi_2tou9__sample-7e8cd4fa6f45b9467975a69788b5d561.jpg" width="200" align="left">
+</a>
+<b>  Randomized skillset:</b>
 <pre>
 React.js, Angular, TypeScript, Linux, Node.js, DevOps, Next.js
 JavaScript, Zod, Docker, Web Development, Front-End Development,
@@ -12,6 +14,6 @@ SASS, styled-components, Emotion, Python (Programming Language), MongoDB
 Back-End Web Development, PostgreSQL, REST API, Express.js, Web Scraping
 Relational Databases, SQL, Selenium, Jest, Cypress, Github Actions
 Network Administration, Bash, Network Security, System Recovery
-Computer Hardware, Software Troubleshooting, Computer Hardware Troubleshooting
+Computer Hardware, Software Troubleshooting, Computer Hardware Troubleshooting.
 </pre>
 </pre>
