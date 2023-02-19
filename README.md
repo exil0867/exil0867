@@ -2,7 +2,7 @@
 <div>
 <div align="middle">
 <a href="https://www.pixiv.net/en/artworks/81755755" target="_blank">
-<img src="https://cdn.donmai.us/sample/7e/8c/__charlotte_and_momoe_nagisa_mahou_shoujo_madoka_magica_and_1_more_drawn_by_toukashi_2tou9__sample-7e8cd4fa6f45b9467975a69788b5d561.jpg" width="285" align="left">
+<img src="https://cdn.donmai.us/sample/7e/8c/__charlotte_and_momoe_nagisa_mahou_shoujo_madoka_magica_and_1_more_drawn_by_toukashi_2tou9__sample-7e8cd4fa6f45b9467975a69788b5d561.jpg" width="243" align="left">
 </a>
 </div>
 <div>
