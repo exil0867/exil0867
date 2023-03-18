@@ -9,13 +9,13 @@
 <pre align="left">
 <b>Randomized skillset:</b>
 React.js, Angular, Next.js, TypeScript, Linux, Node.js, Svelte
-JavaScript, Zod, Docker, ESLint, NPM/PNPM, Remote Development
+JavaScript, Zod, Docker, ESLint, NPM/PNPM, Serverless Functions
 Front-End Development, DevOps, Git, SSH, Shell/Bash Scripting
 Continuous Integration/Continuous Delivery, UX/UI Design, Jest
 Go, Server-side Rendering, Static Site Generation, Github/Gitlab
 GPG, Responsive Web Design, Tailwind CSS, Material UI, Bootstrap
 LXC, Electron, GraphQL, SASS, styled-components, Emotion, PWAs
-Cypress, Python, Back-End Web Development, Serverless Functions
+Cypress, MDX, Python, Back-End Web Development, Remote Development
 MongoDB, REST API, Web App Dockerization, Express.js, SQL, NoSQL
 Web Scraping, PostgreSQL, Oracle, Github Actions, System Recovery
 Network Administration, System/Network Security, Nginx, Rust, C
