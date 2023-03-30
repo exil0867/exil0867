@@ -1,33 +1,46 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-  "name": "exilvm",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "VARIANT": "16-bullseye"
-    }
-  },
-  "runArgs": [
-    "--dns=1.1.1.1",
-    "-v", "${env:HOME}/.wakatime.cfg:/root/.wakatime.cfg"
-  ],
-  "settings": {},
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "jpoissonnier.vscode-styled-components",
-    "dsznajder.es7-react-js-snippets",
-    "rvest.vs-code-prettier-eslint"
-  ],
-  "postCreateCommand": "bash .devcontainer/post-run.sh",
-  "remoteUser": "node",
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "os-provided"
-    },
-    "ghcr.io/devcontainers/features/common-utils:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/github-cli:1": {
-      "installDirectlyFromGitHubRelease": true
-    }
-  }
+	"name": "Debian",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true,
+			"username": "devcontainer",
+			"userUid": "automatic",
+			"userGid": "automatic"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"ppa": true,
+			"version": "os-provided"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/rust:1": {
+			"version": "latest",
+			"profile": "minimal"
+		},
+		"ghcr.io/devcontainers-contrib/features/dprint-asdf:2": {
+			"version": "latest"
+		},
+		"devwasm.azurecr.io/dev-wasm/dev-wasm-feature/rust-wasi:0": {}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }
