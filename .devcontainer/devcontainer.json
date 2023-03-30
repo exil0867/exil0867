@@ -30,7 +30,9 @@
 			"version": "latest"
 		},
 		"devwasm.azurecr.io/dev-wasm/dev-wasm-feature/rust-wasi:0": {}
-	}
+	},
+
+	"postCreateCommand": "cargo install cargo-generate --features vendored-openssl"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
