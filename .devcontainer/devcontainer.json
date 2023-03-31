@@ -29,7 +29,8 @@
 		"ghcr.io/devcontainers-contrib/features/dprint-asdf:2": {
 			"version": "latest"
 		},
-		"devwasm.azurecr.io/dev-wasm/dev-wasm-feature/rust-wasi:0": {}
+		"devwasm.azurecr.io/dev-wasm/dev-wasm-feature/rust-wasi:0": {},
+		"ghcr.io/trunk-io/devcontainer-feature/trunk:1": {}
 	},
 
 	"postCreateCommand": "cargo install cargo-generate --features vendored-openssl"
