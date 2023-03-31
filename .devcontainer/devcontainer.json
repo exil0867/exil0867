@@ -28,12 +28,10 @@
 		},
 		"ghcr.io/devcontainers-contrib/features/dprint-asdf:2": {
 			"version": "latest"
-		},
-		
-		"ghcr.io/trunk-io/devcontainer-feature/trunk:1": {}
+		}
 	},
 
-	"postCreateCommand": "rustup target add wasm32-unknown-unknown && cargo install wasm-bindgen-cli && cargo install cargo-generate --features vendored-openssl"
+	"postCreateCommand": "rustup target add wasm32-unknown-unknown && cargo install --locked trunk"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
