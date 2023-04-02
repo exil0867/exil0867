@@ -1,0 +1,5 @@
+[submodule "site"]
+	path = site
+	url = https://github.com/exilvm/exilvmlinuz.git
+	ignore = all
+	branch = master
