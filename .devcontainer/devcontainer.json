@@ -31,7 +31,14 @@
 		}
 	},
 
-	"postCreateCommand": "rustup target add wasm32-unknown-unknown && cargo install --locked trunk"
+	"postCreateCommand": "rustup target add wasm32-unknown-unknown && cargo install --locked trunk",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"EditorConfig.EditorConfig"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
