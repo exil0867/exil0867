@@ -1,0 +1,52 @@
+version: "3"
+
+volumes:
+  tailscale:
+  sftpgo-home:
+  filebrowser-config:
+
+services:
+  sftpgo:
+    container_name: sftpgo
+    depends_on:
+      - tailscale
+    network_mode: service:tailscale
+    image: drakkan/sftpgo:latest
+    environment:
+      SFTPGO_WEBDAVD__BINDINGS__0__PORT: '10080'
+      SFTPGO_HTTPD__BINDINGS__0__PORT: '8081'
+      SFTPGO_HTTPD__MAX__UPLOAD__FILE__SIZE: '0'
+      TZ: 'Africa/Tunis'
+    volumes:
+      - /home/exilvm/data/box:/srv/sftpgo/data
+      - sftpgo-home:/var/lib/sftpgo  
+    restart: unless-stopped
+  filebrowser:
+    depends_on:
+      - tailscale
+    container_name: filebrowser
+    network_mode: service:tailscale
+    image: hurlenko/filebrowser
+    user: 1000:1000
+    volumes:
+      - /home/exilvm/data/box:/data
+      - filebrowser-config:/config
+    environment:
+      - FB_BASEURL=/filebrowser
+    restart: unless-stopped
+  tailscale:
+    restart: unless-stopped
+    container_name: mycloud_tailscale
+    hostname: n0t3x1l-mycloud
+    image: tailscale/tailscale:latest
+    ports:
+      - 8081:8081
+      - 10080:10080
+      - 8080:8080
+    volumes:
+      - tailscale:/var/lib
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    command: tailscaled
