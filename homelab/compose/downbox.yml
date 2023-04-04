@@ -1,0 +1,65 @@
+version: "3.8"
+
+volumes:
+  tailscale:
+  config:
+
+services:
+  aria2:
+    container_name: aria2
+    depends_on:
+      - tailscale
+    network_mode: service:tailscale
+    image: p3terx/aria2-pro:latest
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
+    environment:
+      - TZ=Africa/Tunis
+      - PUID=1000
+      - PGID=1000
+      - UMASK_SET=022
+      - RPC_SECRET=${ARIA2_RPC_SECRET}
+      - RPC_PORT=6800
+      - LISTEN_PORT=6888
+      - DISK_CACHE=64M
+      - IPV6_MODE=false
+      - UPDATE_TRACKERS=true
+      - CUSTOM_TRACKER_URL=
+    volumes:
+      - config:/config
+      - /home/exilvm/data/box/exilvm/downbox:/downloads
+    restart: unless-stopped
+  ariang:
+    depends_on:
+      - tailscale
+    container_name: ariang
+    network_mode: service:tailscale
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
+    image: p3terx/ariang:latest
+    environment:
+      - TZ=Africa/Tunis
+      - PUID=1000
+      - PGID=1000
+    restart: unless-stopped
+  tailscale:
+    restart: unless-stopped
+    container_name: downbox_tailscale
+    hostname: n0t3x1l-downbox
+    image: tailscale/tailscale:latest
+    ports:
+      - 6800:6800
+      - 6888:6888
+      - 6888:6888/udp
+      - 6880:6880
+    volumes:
+      - tailscale:/var/lib
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    command: tailscaled
