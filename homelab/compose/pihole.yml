@@ -1,0 +1,43 @@
+version: "3"
+
+volumes:
+  tailscale:
+  pihole:
+  dnsmasq:
+
+services:
+  pihole:
+    container_name: pihole
+    depends_on:
+      - tailscale
+    network_mode: service:tailscale
+    image: pihole/pihole:latest
+    environment:
+      TZ: 'Africa/Tunis'
+      WEBPASSWORD: ${PIHOLE_PASSWORD}
+      PIHOLE_DNS_: '1.1.1.1;9.9.9.9'
+      WEBTHEME: default-darker
+      DNSMASQ_LISTENING: all
+    volumes:
+      - pihole:/etc/pihole
+      - dnsmasq:/etc/dnsmasq.d
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+  tailscale:
+    restart: unless-stopped
+    container_name: pihole_tailscale
+    hostname: n0t3x1l-pihole
+    image: tailscale/tailscale:latest
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "8089:80/tcp"
+    volumes:
+      - tailscale:/var/lib
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    command: tailscaled
