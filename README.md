@@ -16,9 +16,9 @@ Go, Server-side Rendering, Static Site Generation, Github/Gitlab
 GPG, Responsive Web Design, Tailwind CSS, Material UI, Bootstrap
 LXC, Electron, GraphQL, SASS, styled-components, Emotion, PWAs
 Cypress, MDX, Python, Back-End Web Development, Remote Development
-MongoDB, REST API, Web App Dockerization, Express.js, SQL, NoSQL
-Web Scraping, PostgreSQL, Oracle, Github Actions, System Recovery
-Network Administration, System/Network Security, Nginx, Rust, C
+MongoDB, REST API, Web App Dockerization, Express.js, Github Actions
+Web Scraping, PostgreSQL, Oracle Database, SQL, NoSQL, Nginx, Rust
+Network Administration, System/Network Security, C, System Recovery
 Software/Hardware Troubleshooting, Debian server Administration
 </pre>
 </div>
