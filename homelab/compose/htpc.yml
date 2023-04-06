@@ -1,0 +1,107 @@
+version: "3.8"
+
+volumes:
+  tailscale:
+  sonarr-config:
+  radarr-config:
+  jackett-config:
+  jackett-blackhole:
+  jellyfin-config:
+  
+services:
+  jackett:
+    container_name: jackett
+    depends_on:
+      - tailscale
+    image: linuxserver/jackett:latest
+    network_mode: service:tailscale
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Tunis
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - jackett-blackhole:/downloads
+      - jackett-config:/config
+
+  sonarr:
+    container_name: sonarr
+    depends_on:
+      - tailscale
+    image: linuxserver/sonarr:latest
+    network_mode: service:tailscale
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Tunis
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - sonarr-config:/config
+      - /home/exilvm/data/box/exilvm/downbox/htpc/tv_shows:/tv
+      - /home/exilvm/data/box/exilvm/downbox:/downloads
+  radarr:
+    container_name: radarr
+    depends_on:
+      - tailscale
+    image: linuxserver/radarr:latest
+    network_mode: service:tailscale
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Tunis
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - radarr-config:/config
+      - /home/exilvm/data/box/exilvm/downbox/htpc/movies:/movies
+      - /home/exilvm/data/box/exilvm/downbox:/downloads
+  jellyfin-vue:
+    image: ghcr.io/jellyfin/jellyfin-vue:stable-rc
+    depends_on:
+      - tailscale
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Tunis
+    network_mode: service:tailscale
+    container_name: jellyfin-vue
+    restart: unless-stopped
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    depends_on:
+      - tailscale
+    network_mode: service:tailscale
+    container_name: jellyfin
+    devices:
+      - /dev/dri:/dev/dri
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Tunis
+    volumes:
+      - jellyfin-config:/config
+      - /home/exilvm/data/box/exilvm/downbox/htpc/tv_shows:/data/tvshows
+      - /home/exilvm/data/box/exilvm/downbox/htpc/movies:/data/movies
+      - /home/exilvm/data/box/exilvm/downbox/htpc/other:/data/other
+    restart: unless-stopped
+  tailscale:
+    restart: unless-stopped
+    container_name: htpc_tailscale
+    hostname: n0t3x1l-htpc
+    image: tailscale/tailscale:latest
+    ports:
+      - 8989:8989
+      - 9117:9117
+      - 8096:8096
+      - 8920:8920
+      - 7359:7359/udp
+      - 1900:1900/udp 
+    volumes:
+      - tailscale:/var/lib
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    command: tailscaled
