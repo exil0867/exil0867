@@ -1,0 +1,36 @@
+version: "3.8"
+
+volumes:
+  config:
+  tailscale:
+
+services:
+  duplicati:
+    image: lscr.io/linuxserver/duplicati:latest
+    container_name: duplicati
+    depends_on:
+      - tailscale
+    network_mode: service:tailscale
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Tunis
+    volumes:
+      - config:/config
+      - /home/exilvm/data-backup:/backups
+      - /home/exilvm/data:/source
+    restart: unless-stopped
+  tailscale:
+    restart: unless-stopped
+    container_name: duplicati_tailscale
+    hostname: n0t3x1l-duplicati
+    image: tailscale/tailscale:latest
+    ports:
+      - 8200:8200
+    volumes:
+      - tailscale:/var/lib
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    command: tailscaled
