@@ -8,16 +8,16 @@
 <div>
 <pre align="left">
 <b>Randomized skillset:</b>
-React.js, Angular, Next.js, TypeScript, Linux, Node.js, Svelte
+React.js, LangChain, Next.js, TypeScript, Linux, Node.js, Svelte
 JavaScript, Zod, Docker, ESLint, NPM/PNPM, Serverless Functions
-Front-End Development, DevOps, Git, SSH, Shell/Bash Scripting
-Continuous Integration/Continuous Delivery, UX/UI Design, Jest
+Front-End Development, WebSockets, DevOps, Git, Shell/Bash Scripting
+Continuous Integration/Continuous Delivery, Twilio, UX/UI Design, Jest
 Go, Server-side Rendering, Static Site Generation, Github/Gitlab
 GPG, Responsive Web Design, Tailwind CSS, Material UI, Bootstrap
-LXC, Electron, GraphQL, SASS, styled-components, Emotion, PWAs
+LXC, Electron, GraphQL, SASS, styled-components, Emotion, PWAs, SSH
 Cypress, MDX, Python, Back-End Web Development, Remote Development
 MongoDB, REST API, Web App Dockerization, Express.js, Github Actions
-Web Scraping, PostgreSQL, Oracle Database, SQL, NoSQL, Nginx, Rust
+Web Scraping, PostgreSQL, Database Design, SQL, NoSQL, Nginx, Rust
 Network Administration, System/Network Security, C, System Recovery
 Software/Hardware Troubleshooting, Debian server Administration
 </pre>
