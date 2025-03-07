@@ -8,11 +8,11 @@
 <div>
 <pre align="left">
 <b>Randomized skillset:</b>
-React.js, LangChain, Next.js, TypeScript, Linux, Node.js, Svelte
+React.js, LangChain, Nix Next.js, TypeScript, Linux, Node.js, Svelte
 JavaScript, Zod, Docker, ESLint, NPM/PNPM, Serverless Functions
 Front-End Development, WebSockets, DevOps, Git, Shell/Bash Scripting
 Continuous Integration/Continuous Delivery, Twilio, UX/UI Design, Jest
-Go, Server-side Rendering, Static Site Generation, Github/Gitlab
+Go, Server-side Rendering, NixOS, Static Site Generation, Github/Gitlab
 GPG, Responsive Web Design, Tailwind CSS, Material UI, Bootstrap
 LXC, Electron, GraphQL, SASS, styled-components, Emotion, PWAs, SSH
 Cypress, MDX, Python, Back-End Web Development, Remote Development
